@@ -1,5 +1,11 @@
 # GGreg20_V3 Radiation Sensor Node with ThingSpeak REST-API for Home Assistant
-Connecting Kyiv-based [GGreg20_V3 Geiger counter](https://iot-devices.com.ua/en/product/ggreg20_v3-ionizing-radiation-detector-with-geiger-tube-sbm-20/) sensor node to the Home Assistant via HTTP GET API
+Connecting Kyiv-based Live [GGreg20_V3 Geiger counter](https://iot-devices.com.ua/en/product/ggreg20_v3-ionizing-radiation-detector-with-geiger-tube-sbm-20/) sensor node to the [Home Assistant](https://www.home-assistant.io/) via HTTP GET API.
+
+## General sensor information
+GGreg20_V3 Geiger counter Hackaday project page: https://hackaday.io/project/183103-ggreg20v3-ionizing-radiation-detector
+Datasheets: [EN](https://iot-devices.com.ua/wp-content/uploads/2022/02/ggreg20_v3-datasheet-eng.pdf), [UA](https://iot-devices.com.ua/wp-content/uploads/2022/02/ggreg20_v3-datasheet-ukr.pdf)
+Order on Tindie: https://www.tindie.com/stores/iotdev/
+
 
 This repository is for Home Assistant server users who want to add radiation data from [the GGreg20_V3 demo module located in Kyiv, Ukraine](https://twitter.com/GGreg20_V3), to their Home Assistant sensor list.
 This is a real module that continuously measures background radiation levels (excluding blackouts) and transmits them directly to [ThingSpeak](https://thingspeak.com/channels/1749073) via the HTTP API.
