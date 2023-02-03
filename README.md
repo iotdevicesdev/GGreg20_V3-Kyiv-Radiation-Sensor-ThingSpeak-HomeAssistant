@@ -34,6 +34,8 @@ After adding the sensors to the configuration and restarting the server, the fol
 ## Step 2. Make widgets in Home Assistant
 ### Basic Widget Example
 To add a simple widget to the dashboard, just create an Entity-based card with the following settings in the form of code:
+![Basic Widget Code Editor](https://github.com/iotdevicesdev/GGreg20_V3-Kyiv-Radiation-Sensor-ThingSpeak-HomeAssistant/blob/main/ThingSpeak_Basic_codeEditor_2023-02-03_191905.jpg)
+Code:
 ```yaml
 type: entities
 entities:
@@ -48,4 +50,31 @@ entities:
     name: ThingSpeakAPI Sensor dose uSv
 title: GGreg20_V3 Radiation (MA5)
 ```
+
 ### Extended Widgets
+
+However, to have beautiful and expressive widgets, you can use the unofficial HACS extension (installed in Home Assistant additionally, according to a separate procedure) and dashboard plugins such as custom-mini-card.
+![Extended Widget Code Editor](https://github.com/iotdevicesdev/GGreg20_V3-Kyiv-Radiation-Sensor-ThingSpeak-HomeAssistant/blob/main/ThingSpeak_Extended_2023-02-03_191905.jpg)
+If you already have these extensions installed, here's an example of how to set up widgets for them:
+![Extended Widget 24h Code Editor](https://github.com/iotdevicesdev/GGreg20_V3-Kyiv-Radiation-Sensor-ThingSpeak-HomeAssistant/blob/main/ThingSpeak_Extended-24h_2023-02-03_191905.jpg)
+Code:
+```yaml
+type: custom:mini-graph-card
+icon: mdi:radioactive
+entities:
+  - entity: sensor.thingspeakapi_sensor_usvperh
+    name: GGreg20_V3
+name: GGreg20_V3 Sensor Node, uSv/h (24h)
+hours_to_show: 24
+show:
+  labels: true
+color_thresholds:
+  - value: 0.2
+    color: '#28a745'
+  - value: 0.3
+    color: '#c0392b'
+  - value: 0.6
+    color: '#dc3545'
+```
+
+
