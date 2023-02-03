@@ -77,6 +77,8 @@ color_thresholds:
     color: '#dc3545'
 ```
 
+![Extended Widget Hourly Code Editor](https://github.com/iotdevicesdev/GGreg20_V3-Kyiv-Radiation-Sensor-ThingSpeak-HomeAssistant/blob/main/ThingSpeak_Extended-Hourly_2023-02-03_191905.jpg)
+
 Hourly Wigdet with min / max / avg code:
 ```yaml
 type: custom:mini-graph-card
@@ -99,4 +101,20 @@ points_per_hour: 12
 group_by: hour
 show:
   labels: true
+```
+
+![Extended Widget Gauge Visual Editor](https://github.com/iotdevicesdev/GGreg20_V3-Kyiv-Radiation-Sensor-ThingSpeak-HomeAssistant/blob/main/ThingSpeak_Extended-Gauge_2023-02-03_191905.jpg)
+Gauge wadget code:
+```yaml
+type: gauge
+entity: sensor.thingspeakapi_sensor_usvperh
+min: 0
+max: 0.9
+unit: uSv/h
+name: GGreg20_V3 Sensor Node ThingSpeak
+needle: true
+severity:
+  green: 0
+  yellow: 0.3
+  red: 0.6
 ```
