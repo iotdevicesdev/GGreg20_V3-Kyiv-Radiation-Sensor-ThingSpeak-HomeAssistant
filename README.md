@@ -56,6 +56,7 @@ title: GGreg20_V3 Radiation (MA5)
 However, to have beautiful and expressive widgets, you can use the unofficial HACS extension (installed in Home Assistant additionally, according to a separate procedure) and dashboard plugins such as custom-mini-card.
 ![Extended Widget Code Editor](https://github.com/iotdevicesdev/GGreg20_V3-Kyiv-Radiation-Sensor-ThingSpeak-HomeAssistant/blob/main/ThingSpeak_Extended_2023-02-03_191905.jpg)
 If you already have these extensions installed, here's an example of how to set up widgets for them:
+#### 24 Hour Widget Example
 ![Extended Widget 24h Code Editor](https://github.com/iotdevicesdev/GGreg20_V3-Kyiv-Radiation-Sensor-ThingSpeak-HomeAssistant/blob/main/ThingSpeak_Extended-24h_2023-02-03_191905.jpg)
 Code:
 ```yaml
@@ -76,6 +77,7 @@ color_thresholds:
   - value: 0.6
     color: '#dc3545'
 ```
+#### Hourly Widget Example with min / max / avg
 
 ![Extended Widget Hourly Code Editor](https://github.com/iotdevicesdev/GGreg20_V3-Kyiv-Radiation-Sensor-ThingSpeak-HomeAssistant/blob/main/ThingSpeak_Extended-Hourly_2023-02-03_191905.jpg)
 
@@ -102,6 +104,8 @@ group_by: hour
 show:
   labels: true
 ```
+
+#### Gauge Widget Example
 
 ![Extended Widget Gauge Visual Editor](https://github.com/iotdevicesdev/GGreg20_V3-Kyiv-Radiation-Sensor-ThingSpeak-HomeAssistant/blob/main/ThingSpeak_Extended-Gauge_2023-02-03_191905.jpg)
 Gauge wadget code:
