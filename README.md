@@ -54,7 +54,7 @@ title: GGreg20_V3 Radiation (MA5)
 
 ### 2.2 Extended Widgets
 
-However, to have beautiful and expressive widgets, you can use the unofficial HACS extension (installed in Home Assistant additionally, according to a separate procedure) and dashboard plugins such as custom-mini-card.
+However, to have beautiful and expressive widgets, you can use the unofficial [HACS](https://hacs.xyz/docs/setup/prerequisites) extension (installed in Home Assistant additionally, according to a separate procedure) and dashboard plugins such as [custom-mini-card](https://github.com/kalkih/mini-graph-card).
 ![Extended Widget Code Editor](https://github.com/iotdevicesdev/GGreg20_V3-Kyiv-Radiation-Sensor-ThingSpeak-HomeAssistant/blob/main/ThingSpeak_Extended_2023-02-03_191905.jpg)
 If you already have these extensions installed, here's an example of how to set up widgets for them:
 #### 2.2.1 24-Hour Widget Example
