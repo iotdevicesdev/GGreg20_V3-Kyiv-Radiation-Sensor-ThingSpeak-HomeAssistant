@@ -29,8 +29,23 @@ sensor:
 ```
 After adding the sensors to the configuration and restarting the server, the following sensor entities will be available with data received from the ThingSpeak channel for the GGreg20_V3 Radiation Sensor Node.
 
-![This is an image](https://myoctocat.com/assets/images/base-octocat.svg)
+![DevTools HA Entities](https://github.com/iotdevicesdev/GGreg20_V3-Kyiv-Radiation-Sensor-ThingSpeak-HomeAssistant/blob/main/ThingSpeak_HA_devTools_entities_2023-02-03.jpg)
 
 ## Step 2. Make widgets in Home Assistant
 ### Basic Widget Example
+To add a simple widget to the dashboard, just create an Entity-based card with the following settings in the form of code:
+```yaml
+type: entities
+entities:
+  - entity: sensor.thingspeakapi_sensor_cpm
+    icon: mdi:pulse
+    name: ThingSpeakAPI Sensor CPM
+  - entity: sensor.thingspeakapi_sensor_usvperh
+    icon: mdi:radioactive
+    name: ThingSpeakAPI Sensor uSv/h
+  - entity: sensor.thingspeakapi_sensor_dose_usv
+    icon: mdi:radioactive
+    name: ThingSpeakAPI Sensor dose uSv
+title: GGreg20_V3 Radiation (MA5)
+```
 ### Extended Widgets
