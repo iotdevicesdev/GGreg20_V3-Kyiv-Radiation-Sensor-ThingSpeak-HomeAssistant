@@ -35,7 +35,7 @@ After adding the sensors to the configuration and restarting the server, the fol
 ### 2.1 Basic Widget Example
 To add a simple widget to the dashboard, just create an Entity-based card with the following settings in the form of code:
 ![Basic Widget Code Editor](https://github.com/iotdevicesdev/GGreg20_V3-Kyiv-Radiation-Sensor-ThingSpeak-HomeAssistant/blob/main/ThingSpeak_Basic_codeEditor_2023-02-03_191905.jpg)
-Code:
+Basic Widget Code:
 ```yaml
 type: entities
 entities:
