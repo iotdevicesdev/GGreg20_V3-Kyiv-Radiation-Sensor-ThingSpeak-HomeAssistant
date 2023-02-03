@@ -6,7 +6,7 @@ This is a real module that continuously measures background radiation levels (ex
 
 >To add the necessary entities, you need to edit the configuration.yaml file and create widgets. And that's it.
 
-## Step 1. Add REST sensors to your counfiguration.yaml
+## Step 1. Add REST sensors to Home Assistant counfiguration.yaml
 Here Home Assistant API is used: https://www.home-assistant.io/integrations/sensor.rest/
 ```yaml
 sensor:
