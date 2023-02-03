@@ -32,7 +32,7 @@ After adding the sensors to the configuration and restarting the server, the fol
 ![DevTools HA Entities](https://github.com/iotdevicesdev/GGreg20_V3-Kyiv-Radiation-Sensor-ThingSpeak-HomeAssistant/blob/main/ThingSpeak_HA_devTools_entities_2023-02-03.jpg)
 
 ## Step 2. Make widgets in Home Assistant
-### Basic Widget Example
+### 2.1 Basic Widget Example
 To add a simple widget to the dashboard, just create an Entity-based card with the following settings in the form of code:
 ![Basic Widget Code Editor](https://github.com/iotdevicesdev/GGreg20_V3-Kyiv-Radiation-Sensor-ThingSpeak-HomeAssistant/blob/main/ThingSpeak_Basic_codeEditor_2023-02-03_191905.jpg)
 Code:
@@ -51,14 +51,14 @@ entities:
 title: GGreg20_V3 Radiation (MA5)
 ```
 
-### Extended Widgets
+### 2.2 Extended Widgets
 
 However, to have beautiful and expressive widgets, you can use the unofficial HACS extension (installed in Home Assistant additionally, according to a separate procedure) and dashboard plugins such as custom-mini-card.
 ![Extended Widget Code Editor](https://github.com/iotdevicesdev/GGreg20_V3-Kyiv-Radiation-Sensor-ThingSpeak-HomeAssistant/blob/main/ThingSpeak_Extended_2023-02-03_191905.jpg)
 If you already have these extensions installed, here's an example of how to set up widgets for them:
-#### 24 Hour Widget Example
+#### 2.2.1 24-Hour Widget Example
 ![Extended Widget 24h Code Editor](https://github.com/iotdevicesdev/GGreg20_V3-Kyiv-Radiation-Sensor-ThingSpeak-HomeAssistant/blob/main/ThingSpeak_Extended-24h_2023-02-03_191905.jpg)
-Code:
+24-hour widget code:
 ```yaml
 type: custom:mini-graph-card
 icon: mdi:radioactive
@@ -77,7 +77,7 @@ color_thresholds:
   - value: 0.6
     color: '#dc3545'
 ```
-#### Hourly Widget Example with min / max / avg
+#### 2.2.2 Hourly Widget Example with min / max / avg
 
 ![Extended Widget Hourly Code Editor](https://github.com/iotdevicesdev/GGreg20_V3-Kyiv-Radiation-Sensor-ThingSpeak-HomeAssistant/blob/main/ThingSpeak_Extended-Hourly_2023-02-03_191905.jpg)
 
@@ -105,10 +105,10 @@ show:
   labels: true
 ```
 
-#### Gauge Widget Example
+#### 2.2.3 Gauge Widget Example
 
 ![Extended Widget Gauge Visual Editor](https://github.com/iotdevicesdev/GGreg20_V3-Kyiv-Radiation-Sensor-ThingSpeak-HomeAssistant/blob/main/ThingSpeak_Extended-Gauge_2023-02-03_191905.jpg)
-Gauge wadget code:
+Gauge widget code:
 ```yaml
 type: gauge
 entity: sensor.thingspeakapi_sensor_usvperh
