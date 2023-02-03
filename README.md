@@ -77,4 +77,26 @@ color_thresholds:
     color: '#dc3545'
 ```
 
-
+Hourly Wigdet with min / max / avg code:
+```yaml
+type: custom:mini-graph-card
+icon: mdi:radioactive
+entities:
+  - entity: sensor.thingspeakapi_sensor_usvperh
+    aggregate_func: max
+    name: Max
+    color: null
+  - entity: sensor.thingspeakapi_sensor_usvperh
+    aggregate_func: min
+    name: Min
+  - entity: sensor.thingspeakapi_sensor_usvperh
+    aggregate_func: avg
+    name: Avg
+    color: green
+name: GGreg20_V3 Radiation Power (Hourly)
+hours_to_show: 24
+points_per_hour: 12
+group_by: hour
+show:
+  labels: true
+```
