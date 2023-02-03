@@ -1,12 +1,13 @@
 # GGreg20_V3 Radiation Sensor Node with ThingSpeak REST-API for Home Assistant
-Connecting Kyiv-based GGreg20_V3 Geiger counter sensor node to the Home Assistant via HTTP GET API
+Connecting Kyiv-based [GGreg20_V3 Geiger counter](https://iot-devices.com.ua/en/product/ggreg20_v3-ionizing-radiation-detector-with-geiger-tube-sbm-20/) sensor node to the Home Assistant via HTTP GET API
 
-This repository is for Home Assistant server users who want to add radiation data from the GGreg20_V3 demo module located in Kyiv, Ukraine, to their Home Assistant sensor list.
-This is a real module that continuously measures background radiation levels (excluding blackouts) and transmits them directly to ThingSpeak via the HTTP API.
+This repository is for Home Assistant server users who want to add radiation data from [the GGreg20_V3 demo module located in Kyiv, Ukraine](https://twitter.com/GGreg20_V3), to their Home Assistant sensor list.
+This is a real module that continuously measures background radiation levels (excluding blackouts) and transmits them directly to [ThingSpeak](https://thingspeak.com/channels/1749073) via the HTTP API.
 
 >To add the necessary entities, you need to edit the configuration.yaml file and create widgets. And that's it.
 
 ## Step 1. Add REST sensors to your counfiguration.yaml
+Here Home Assistant API is used: https://www.home-assistant.io/integrations/sensor.rest/
 ```yaml
 sensor:
   - platform: rest
