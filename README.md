@@ -12,6 +12,8 @@ Datasheets:
 
 Order on Tindie: https://www.tindie.com/stores/iotdev/
 
+<a href="https://www.tindie.com/stores/iotdev/?ref=offsite_badges&utm_source=sellers_iotdevices&utm_medium=badges&utm_campaign=badge_large"><img src="https://d2ss6ovg47m0r5.cloudfront.net/badges/tindie-larges.png" alt="I sell on Tindie" width="200" height="104"></a>
+
 ## About this repo
 This repository is for Home Assistant server users who want to add radiation data from [the GGreg20_V3 demo module located in Kyiv, Ukraine](https://twitter.com/GGreg20_V3), to their Home Assistant sensor list.
 This is a real module that continuously measures background radiation levels (excluding blackouts) and transmits them directly to [ThingSpeak](https://thingspeak.com/channels/1749073) via the HTTP API.
